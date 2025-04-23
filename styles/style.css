@@ -1,0 +1,66 @@
+body {
+  background-color: #00624e;
+  display: flex;
+  margin: 0px;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  color: #2d2d2d;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+
+  display: flex;
+  width: auto;
+  height: 15%;
+  background-color: #0192be;
+}
+
+main {
+  display: flex;
+  align-content: center;
+  background-color: rgb(104, 104, 104);
+  height: 100vh;
+  width: 100vw;
+}
+
+#product {
+  display: flex;
+  background-color: rgb(171, 171, 171);
+  align-content: center;
+  border-color: black;
+  border-radius: 5px;
+  width: 50%;
+  height: 500px;
+  gap: 100px;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+#cart {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background-color: rgb(127, 127, 127);
+  width: 50%;
+  height: 500px;
+  border-color: black;
+  border-radius: 5px;
+  gap: 100px;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+footer {
+  background-color: #00624e;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+
+section id div span {
+}

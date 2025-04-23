@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>mini panier d'achat</title>
-</head>
-<body>
-    <header></header>
+  </head>
+  <body>
+    <header>Panier d'achat</header>
     <main>
-        <section id="product">
-            <div><span>Produits</span></div>
-            <div>
-                <div data-id="product1">
-                    <span>Produit 1</span>
-                    <span>Prix</span>
-                    <button type="button">Ajouter au panier</button>
-                </div>
-            </div>
-        </section>
-        <section id="cart">
-            <div><span> Panier</span></div>
-            <div></div>
-        </section>
+      <section id="product">
+        <div><span>Produits</span></div>
+        <div>
+          <div data-id="product1">
+            <span>Produit 1</span>
+            <span>Prix</span>
+            <button type="button">Ajouter au panier</button>
+          </div>
+        </div>
+      </section>
+      <section id="cart">
+        <div><span> Panier</span></div>
+        <div>
+          <span>Produit 1</span>
+          <span>Prix</span>
+          <button id="button_sup" type="button">Supprimer</button>
+          <div>Total<span id="total"><span>----------</span><span>euro</span></div>
+        </div>
+      </section>
     </main>
     <footer></footer>
-</body>
+    <script src="/panier_d-achat/scripts/scripts.js"></script>
+  </body>
 </html>
