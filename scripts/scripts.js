@@ -6,11 +6,26 @@ function addProductToCart(productId, buttonId, cartId) {
 
   button_product.addEventListener("click", () => {
     const cartDiv = document.createElement("div");
+    cartDiv.setAttribute("data-id", productId);
     cartItem.appendChild(cartDiv);
     childArray.forEach((element) => {
       const newCartItem = document.createElement("span");
       newCartItem.textContent = element.textContent;
       cartDiv.appendChild(newCartItem);
+    });
+    const delete_button = document.createElement("button");
+    delete_button.setAttribute("data-id", productId);
+    delete_button.textContent = "Supprimer";
+    cartDiv.appendChild(delete_button);
+    delete_button.addEventListener("click", () => {
+      deleteCart(productId);
+      console.log(cartDiv.getAttribute("data-id"));
+      if (
+        cartDiv.getAttribute("data-id") ===
+        delete_button.getAttribute("data-id")
+      ) {
+        cartDiv.remove();
+      }
     });
   });
 }
